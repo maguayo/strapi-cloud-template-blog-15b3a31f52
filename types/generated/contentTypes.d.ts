@@ -415,7 +415,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     blocks: Schema.Attribute.DynamicZone<
       ['shared.rich-text', 'shared.image-text', 'shared.seo', 'shared.alert']
     >;
-    body: Schema.Attribute.Blocks;
+    body: Schema.Attribute.RichText;
     category: Schema.Attribute.Relation<'manyToOne', 'api::category.category'>;
     cover: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
     createdAt: Schema.Attribute.DateTime;

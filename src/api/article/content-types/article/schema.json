@@ -45,9 +45,6 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
-    "body": {
-      "type": "blocks"
-    },
     "banner": {
       "type": "relation",
       "relation": "oneToOne",
@@ -61,6 +58,9 @@
         "shared.seo",
         "shared.alert"
       ]
+    },
+    "body": {
+      "type": "richtext"
     }
   }
 }

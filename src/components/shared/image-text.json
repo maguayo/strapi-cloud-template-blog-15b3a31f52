@@ -2,25 +2,27 @@
   "collectionName": "components_shared_image_texts",
   "info": {
     "displayName": "Image / Text",
-    "icon": "bulletList"
+    "icon": "bulletList",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "text": {
-      "type": "blocks"
+      ]
     },
     "image_right": {
       "type": "boolean"
+    },
+    "text": {
+      "type": "richtext"
     }
   }
 }

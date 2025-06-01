@@ -8,7 +8,7 @@ export interface SharedAlert extends Struct.ComponentSchema {
     icon: 'expand';
   };
   attributes: {
-    text: Schema.Attribute.Blocks;
+    text: Schema.Attribute.RichText;
     theme: Schema.Attribute.Enumeration<
       ['primary', 'success', 'warning', 'danger']
     >;
@@ -19,13 +19,14 @@ export interface SharedAlert extends Struct.ComponentSchema {
 export interface SharedImageText extends Struct.ComponentSchema {
   collectionName: 'components_shared_image_texts';
   info: {
+    description: '';
     displayName: 'Image / Text';
     icon: 'bulletList';
   };
   attributes: {
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     image_right: Schema.Attribute.Boolean;
-    text: Schema.Attribute.Blocks;
+    text: Schema.Attribute.RichText;
   };
 }
 
